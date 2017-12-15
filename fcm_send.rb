@@ -118,7 +118,7 @@ class FcmSend < ApplicationRecord
 		  ':method' => "POST",
 		  ':path' => uri.path,
 		  'content-length' => payload.bytesize.to_s, # should be less than or equal to 4096 bytes
-		  'apns-topic' => "nfn.ViBo" # should be less than or equal to 4096 bytes
+		  'apns-topic' => "topic" # should be less than or equal to 4096 bytes
 		}
 
 		puts 'Sending HTTP 2.0 request'
